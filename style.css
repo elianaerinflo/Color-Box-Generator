@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.output{
+    margin-top: 30px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 17px;
+    color: #FA7070;
+    text-align: center;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 40px;
+    width: 500px;
+    height: 22vh;
+    background: transparent;
+    border: 2px solid #473C33;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: -10px -10px 10px 
+                rgba(255, 255, 255,0.2), 10px 10px 10px 
+                rgba(0, 0, 0, 0.2), inset -10px -10px 10px
+                rgba(255, 255, 255, 0.2), inset 10px 10px 10px
+                rgba(0, 0, 0, 0.2);
+}
+
+.boxes {
+    border: 3px solid black;
+    display: inline-block;
+    margin: 12px;
+    margin-top: 30px;
+}
+
+.linkBack {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+a {
+    font-size: 20px;
+    padding-bottom: 2px;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+    color: #FF8E9E;
+    cursor: pointer ;
+}
+
+a:before {
+    content: " ";
+    position: absolute;
+    height: 0.2em;
+    width: 100%;
+    background-size: 200% 100%;
+    bottom: -0.1em;
+    transition: 1.5s;
+    background: linear-gradient(
+                to right,
+                #39B5E0,
+                #C780FA,
+                #FED049,
+                #AACB73,
+                #B73E3E,
+                #FD8A8A);
+}
+
+a:hover:before {
+    background-position: 100% 0;
+}
